@@ -84,9 +84,10 @@ fun Basic(modifier: Modifier = Modifier){
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Medium
             ),
-
         )
-
+        Image(painter = painterResource(
+            id = R.drawable.ipul2
+        ),
 
     }
 }

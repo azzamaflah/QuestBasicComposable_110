@@ -64,6 +64,12 @@ fun Basic(modifier: Modifier = Modifier){
             ),
             modifier = Modifier.padding(top = 16.dp)
         )
+
+        Text(text = "Nama",
+            style = TextStyle(fontSize = 10.sp,
+                fontWeight = FontWeight.Bold),
+            modifier = Modifier.padding(top = 40.dp)
+        )
     }
 }
 @Preview(showBackground = true)

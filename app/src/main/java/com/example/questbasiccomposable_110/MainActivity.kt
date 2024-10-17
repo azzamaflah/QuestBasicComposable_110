@@ -19,10 +19,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             QuestBasicComposable_110Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
+                    Basic(modifier = Modifier.padding(innerPadding))
+
                     )
                 }
             }

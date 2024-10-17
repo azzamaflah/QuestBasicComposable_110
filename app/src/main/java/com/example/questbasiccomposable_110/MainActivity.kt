@@ -71,14 +71,21 @@ fun Basic(modifier: Modifier = Modifier){
                 fontWeight = FontWeight.Bold),
             modifier = Modifier.padding(top = 40.dp)
         )
-        Text(
-            text = "Azzam Hafidh Aflah",
+        Text(text = "Azzam Hafidh Aflah",
             style = TextStyle(
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Medium,
                 color = Color(0xFFB22222) // ini buat warnya menjadi merah agak kegelapan
             )
         )
+        Text(
+            text = "20220140110",
+            style = TextStyle(
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Medium
+            ),
+        )
+
 
     }
 }

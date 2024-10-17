@@ -7,7 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
@@ -40,44 +42,56 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Basic(modifier: Modifier = Modifier){
-    Column (
+fun Basic(modifier: Modifier = Modifier) {
+    Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
-        modifier = Modifier.fillMaxSize()
-    ){
-        Text(text = "Login",
-            style = TextStyle(fontSize = 50.sp,
-                fontWeight = FontWeight.Bold)
-        )
-        Text(text = "Halaman login")
-        Image(painter = painterResource(
-            id = R.drawable.ipul
-        ),
-            contentDescription = null,
-            modifier = Modifier.run { padding(top = 40.dp).size(250.dp) }
-        )
+        modifier = Modifier.fillMaxSize().padding(16.dp) // Padding keseluruhan
+    ) {
         Text(
-            text = "fans ipul nih bos senggol dong",
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Medium
-            ),
-            modifier = Modifier.padding(top = 16.dp)
+            text = "Login",
+            style = TextStyle(fontSize = 50.sp, fontWeight = FontWeight.Bold)
         )
 
-        Text(text = "Nama",
-            style = TextStyle(fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier.padding(top = 40.dp)
+        Spacer(modifier = Modifier.height(16.dp)) // Jarak antara elemen
+
+        Text(text = "Halaman login")
+
+        Spacer(modifier = Modifier.height(40.dp)) // Jarak sebelum gambar
+
+        Image(
+            painter = painterResource(id = R.drawable.ipul),
+            contentDescription = null,
+            modifier = Modifier.size(250.dp) // Ukuran gambar
         )
-        Text(text = "Azzam Hafidh Aflah",
+
+        Spacer(modifier = Modifier.height(16.dp)) // Jarak setelah gambar
+
+        Text(
+            text = "fans ipul nih bos senggol dong",
+            style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Medium)
+        )
+
+        Spacer(modifier = Modifier.height(40.dp)) // Jarak sebelum teks tambahan
+
+        Text(
+            text = "Nama",
+            style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold)
+        )
+
+        Spacer(modifier = Modifier.height(8.dp)) // Jarak sebelum nama
+
+        Text(
+            text = "Azzam Hafidh Aflah",
             style = TextStyle(
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Medium,
-                color = Color(0xFFB22222) // ini buat warnya menjadi merah agak kegelapan
+                color = Color(0xFFB22222) // Warna merah agak gelap
             )
         )
+
+        Spacer(modifier = Modifier.height(8.dp)) // Jarak sebelum angka
+
         Text(
             text = "20220140110",
             style = TextStyle(
@@ -85,14 +99,17 @@ fun Basic(modifier: Modifier = Modifier){
                 fontWeight = FontWeight.Medium
             ),
         )
-        Image(painter = painterResource(
-            id = R.drawable.ipul2
-        ),
+
+        Spacer(modifier = Modifier.height(40.dp)) // Jarak sebelum gambar kedua
+
+        Image(
+            painter = painterResource(id = R.drawable.ipul2),
             contentDescription = null,
-            modifier = Modifier.run { padding(top = 40.dp).size(250.dp) }
+            modifier = Modifier.size(250.dp) // Ukuran gambar kedua
         )
     }
 }
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {

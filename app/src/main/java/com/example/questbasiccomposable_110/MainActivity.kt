@@ -15,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -66,10 +67,19 @@ fun Basic(modifier: Modifier = Modifier){
         )
 
         Text(text = "Nama",
-            style = TextStyle(fontSize = 10.sp,
+            style = TextStyle(fontSize = 20.sp,
                 fontWeight = FontWeight.Bold),
             modifier = Modifier.padding(top = 40.dp)
         )
+        Text(
+            text = "Azzam Hafidh Aflah",
+            style = TextStyle(
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Medium,
+                color = Color(0xFFB22222) // ini buat warnya menjadi merah agak kegelapan
+            )
+        )
+
     }
 }
 @Preview(showBackground = true)

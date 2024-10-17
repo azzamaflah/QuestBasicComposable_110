@@ -54,7 +54,8 @@ fun Basic(modifier: Modifier = Modifier){
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Medium
             ),
-
+            modifier = Modifier.padding(top = 16.dp)
+        )
     }
 }
 @Preview(showBackground = true)

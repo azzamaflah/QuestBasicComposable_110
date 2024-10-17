@@ -88,7 +88,9 @@ fun Basic(modifier: Modifier = Modifier){
         Image(painter = painterResource(
             id = R.drawable.ipul2
         ),
-
+            contentDescription = null,
+            modifier = Modifier.run { padding(top = 40.dp).size(250.dp) }
+        )
     }
 }
 @Preview(showBackground = true)

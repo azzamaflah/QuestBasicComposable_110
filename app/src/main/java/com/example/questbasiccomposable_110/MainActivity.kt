@@ -48,12 +48,19 @@ fun Basic(modifier: Modifier = Modifier){
             contentDescription = null,
             modifier = Modifier.run { padding(top = 40.dp).size(250.dp) }
         )
-}
+        Text(
+            text = "fans ipul nih bos senggol dong",
+            style = TextStyle(
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Medium
+            ),
 
+    }
+}
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     QuestBasicComposable_110Theme {
-        Greeting("Android")
+        Basic()
     }
 }
